@@ -25,14 +25,14 @@ class Utility{
     /*the numberValidation method reads a phone number from the user and validates it.
     *the return type for this method is integer.
     */
-    static function numberValidation(){
-        $number=readline();
-        if(is_numeric($number)&&count($number)==10){
-            return $number;
+    public static function numberValidation()
+    {
+
+        fscanf(STDIN, "%d\n", $n);
+        while (!is_numeric($n)) {
+            fscanf(STDIN, "%d\n", $n);
         }
-        else{
-            echo "Enter a valid number";
-        }
+        return $n;
     }
     /*
     *fullNamevalidation method reads a full name of the user and validates the name
