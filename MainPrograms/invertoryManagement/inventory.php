@@ -20,6 +20,7 @@ function run()
     echo "Menu :\n";
     echo "Press 1 to Enter New Details in Stock Portfolio \nPress 2 to to clear and create new Portfolio \n";
     echo "Enter 3 to Display Old Shares With Report\nElse exit anything to exit\n";
+    echo "Enter your choice \n";
     $option = Utility::getInt();
     switch ($option) {
         case 1:$obj->add();
