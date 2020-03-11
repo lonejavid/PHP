@@ -20,7 +20,9 @@ class BusinessLogic
         echo "\n\n";
         return $arr;
     }
-
+/*
+ *this method prints the total value of stock and returns nothing
+ */
     public function printReport($portfolio)
     {
         $total = 0;
